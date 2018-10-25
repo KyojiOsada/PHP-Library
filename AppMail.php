@@ -83,26 +83,7 @@ class AppMail
 									$vv = str_replace('>', '', $vv[1]);
 								}
 								if (! AppValid::isMailAddress($vv)) {
-									if ($k === 'From') {
-										$code = 2000;
-									} else if ($k === 'To') {
-										$code = 2010;
-									} else if ($k === 'Cc') {
-										$code = 2020;
-									} else if ($k === 'Bcc') {
-										$code = 2030;
-									} else if ($k === 'Reply-To') {
-										$code = 2040;
-									} else if ($k === 'Return-Recipt-To') {
-										$code = 2050;
-									} else if ($k === 'Disposition-Notification-To') {
-										$code = 2060;
-									} else if ($k === 'Return-Path') {
-										$code = 2070;
-									} else if ($k === 'Errors-To') {
-										$code = 2080;
-									}
-									throw new Exception("MUA: The passed $k is invalid.", $code);
+									throw new Exception("MUA: The passed $k is invalid.", 0);
 								}
 							}
 
