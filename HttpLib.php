@@ -1,6 +1,6 @@
 <?php
 
-class AppHttp
+class HttpLib
 {
 
 	# HTTP Protocol Version
