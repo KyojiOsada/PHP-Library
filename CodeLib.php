@@ -1,6 +1,6 @@
 <?php
 
-class AppCode {
+class CodeLib {
 
 	private static $iv = '4rgaP3pKm+hP9jie5o2z4J+SNVzrQE90xgo6tX49KNYnkZlkSiPt0a+jfZ3JRg5P518eP4wdBbnOIFLin9piJQ==';
 	private static $key = 'kt87R7CiVBoU0pPZxWMTVPb4HGUd1IVRUFu9rink5NBGFUum1aDPqm/V8FdQJdgzoNZ3fsGNvruzuAf0l+QpiA==';
