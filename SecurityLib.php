@@ -1,6 +1,6 @@
 <?php
 
-class AppSecurity
+class SecurityLib
 {
 	public static $globs = array('GLOBALS', '_ENV', '_SERVER', '_POST', '_GET', '_REQUEST', '_COOKIE', '_SESSION', '_FILES');
 
