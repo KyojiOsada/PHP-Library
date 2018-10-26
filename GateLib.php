@@ -1,6 +1,6 @@
 <?php
 
-class AppGate
+class GateLib
 {
 
     public $access_linit = 10;
