@@ -1,6 +1,6 @@
 <?php
 
-class AppMail
+class MailLib
 {
 
 	public static function send(array $_envs, array $_headers, $_body = null, &$_file = null, &$_msg = null)
