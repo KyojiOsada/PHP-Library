@@ -1,6 +1,6 @@
 <?php
 
-class AppArray
+class ArrayLib
 {
 
 	public static function forwardKey(array $_sources, array $_filters)
