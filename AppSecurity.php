@@ -108,9 +108,16 @@ class AppSecurity
 		}
 	}
 
+
 	public static function blockClickJacking()
 	{
 		header('X-FRAME-OPTIONS: SAMEORIGIN');
+	}
+
+
+	public static function allowAccessControlOrigin($_target = '*')
+	{
+		header('Access-Control-Allow-Origin: ' . $_target, true);
 	}
 
 }
