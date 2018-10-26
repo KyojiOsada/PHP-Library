@@ -1,6 +1,6 @@
 <?php
 
-class GitDeployment
+class GitScript
 {
 
 	public $users = array(
