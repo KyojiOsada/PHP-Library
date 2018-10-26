@@ -1,6 +1,6 @@
 <?php
 
-class AppBenchmark {
+class BenchmarkLib {
 
 	public $times = array();
 	public $memories = array();
