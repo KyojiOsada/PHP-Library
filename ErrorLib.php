@@ -1,6 +1,6 @@
 <?php
 
-class AppError
+class ErrorLib
 {
 
     # PHP Error Numbers
