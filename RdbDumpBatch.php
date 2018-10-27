@@ -154,7 +154,7 @@ class RdbDumpBatch
 
 		# start Report
 		$body = 'The database backup is started.' . "\n\n" . $start_date . "\n" . 'Database: ' . $this->database_host . "\n" . 'Backup: ' . $this->backup_host;
-		$cmd = 'echo -e "' . $body . '" | mail -s "【Backup Start】' . $this->env . 'DB" -r "RDB Backup' . $this->backup_num . '<back' . $this->backup_num . '@minikura.com>" ' . $rcpt_tos;
+		$cmd = 'echo -e "' . $body . '" | mail -s "【Backup Start】' . $this->env . 'DB" -r "RDB Backup' . $this->backup_num . '<back' . $this->backup_num . '@example.com>" ' . $rcpt_tos;
 		if (false === $this->_exec($cmd)) {
 			throw new Exception('Could not mail starter. ' . $cmd);
 		}
@@ -324,7 +324,7 @@ class RdbDumpBatch
 		$rcpt_tos = implode(' ', $this->rcpt_tos);
 
 		# report Completion
-		$cmd = 'echo -e "' . $body . '" | mail -s "【Backup Comleted】' . $this->env . 'DB" -r "RDB Backup' . $this->backup_num . '<back' . $this->backup_num . '@minikura.com>" ' . $rcpt_tos;
+		$cmd = 'echo -e "' . $body . '" | mail -s "【Backup Comleted】' . $this->env . 'DB" -r "RDB Backup' . $this->backup_num . '<back' . $this->backup_num . '@example.com>" ' . $rcpt_tos;
 		if (false === $this->_exec($cmd)) {
 			throw new Exception('Could not mail dump report. ' . $cmd);
 		}
@@ -377,7 +377,7 @@ class RdbDumpBatch
 
 		$rcpt_tos = implode(' ', $this->rcpt_tos);
 
-		$cmd = 'echo -e "' . $body . '" | mail -s "【Dump Comp Completed】' . $this->env . 'DB" -r "RDB Backup' . $this->backup_num . '<back' . $this->backup_num . '@minikura.com>" ' . $rcpt_tos;
+		$cmd = 'echo -e "' . $body . '" | mail -s "【Dump Comp Completed】' . $this->env . 'DB" -r "RDB Backup' . $this->backup_num . '<back' . $this->backup_num . '@example.com>" ' . $rcpt_tos;
 		if (false === $this->_exec($cmd)) {
 			throw new Exception('Could not mail comp report. ' . $cmd);
 		}
