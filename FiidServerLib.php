@@ -1,9 +1,9 @@
 <?php
 
-class FiidServer
+class FiidServerLib
 {
 	# Config
-	public $config_path = __DRI__ . '/FiidConfig.php';
+	public $config_path = __DRI__ . '/FiidServerConfig.php';
 	public $ipv4 = null;
 	public $port = null;
 
