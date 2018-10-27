@@ -1,6 +1,6 @@
 <?php
 
-class FiidClient
+class FiidClientLib
 {
 	public $host = '127.0.0.1';
 	public $port = '50000';
