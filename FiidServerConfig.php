@@ -1,6 +1,6 @@
 <?php
 
-class FiidConfig
+class FiidServerConfig
 {
 
 	public $ipv4 = '127.0.0.1';
